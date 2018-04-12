@@ -5,7 +5,6 @@ class Solution(object):
         :rtype: int
         """
         ret, place = 0, 0
-        for index, c in enumerate(list(s)):
-            
-            ret = ret * 26 + ((ord(s[index]) - ord('A')) + 1)
+        for c in s:            
+            ret = ret * 26 + ((ord(c) - ord('A')) + 1)
         return ret
