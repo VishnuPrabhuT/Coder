@@ -18,7 +18,7 @@ class Solution(object):
                 right -= 1
         return res
     
- ############################  Stack  #######################################
+ ############################  Stack  ######################################
 
 class Solution(object):
     def trap(self, height):
