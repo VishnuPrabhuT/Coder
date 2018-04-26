@@ -7,7 +7,7 @@ class Solution:
         :rtype: List[int]
         """
         bucket = [[] for _ in nums]
-        base = collections.defaultdict(int)
+        base[i] = base[i] + 1 if i in base else 1
         for i in nums:
             base[i] += 1
         for num, freq in base.items():
