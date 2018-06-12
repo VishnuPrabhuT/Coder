@@ -6,11 +6,13 @@ class Solution(object):
         :rtype: str
         """
         memo = [0] * len(s)
+        # Awesome code right here !!!!!! #
         for word in dict:
             pos = s.find(word)
             while pos != -1:
                 memo[pos:pos+len(word)] = [1] * len(word)
                 pos = s.find(word, pos+1)
+        ###################################
         temp = []
         for i in range(len(s)):
             if memo[i] and (i ==0 or not memo[i-1]):
